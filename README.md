@@ -6,7 +6,7 @@ Classifies headlines as Positive (1) or Negative (0) based on writing tone.
 # 📂 Project Structure
 
 ```bash
-├── newspaper.py                            # Web scraping for news headlines
+├── newspaper.py                            # Web scraping for news headlines using BeautifulSoup
 ├── news_headings.csv                       # Dataset containg news headlines
 ├── balanced_news_book.ipynb                # Jupyter notebook for model building
 ├── balanced_news_model.pth                 # Saved model
@@ -46,4 +46,21 @@ The dataset `news_headings.csv` contains news headlines collected from The India
   
 # 📊 Visualization
 here is visualization of confusion_matrix
+![model confusion_matrix](image/confusion_matrix.png)
 
+# 💻 Tech Stack
+
+- Python
+- Numpy
+- seaborn
+- Matplotlib  
+- PyTorch  
+- HuggingFace Transformers  
+- Pandas  
+- BeautifulSoup
+
+# 🔮 Future Improvements
+
+- Develop a user interface using Streamlit  
+- Build an API using FastAPI for model deployment  
+- Apply advanced fine-tuning techniques to improve BERT model performance  
