@@ -20,21 +20,30 @@ The dataset `news_headings.csv` contains news headlines collected from The India
 - **news**: Text of the headline  
 - **label**: Binary label indicating sentiment — Positive (1) or Negative (0)
 
-# 🧮 Methodology
-1. Data Preprocessing
-   * generated automatic labels using HuggingFace sentiment Pipeline
-   * created the dataframe
-2. Data Splitting
-   * splited the data into train and test and loaded data into DataLoader
-3. Class balancing
-   * handled class imbalance giving more weight to small class
-4. Tokenized the data
-   * made tokens of the text using BERT Tokenizer
-5. Model Buidling
-    * used pretrained BERT Model for Classification
-    * partially fine tunned the model
-6. Model Evaluation
-    * Classification_report
-    * Confusion_matrix
+# 🧮 Workflow
 
-# Visualization
+### Data Preprocessing
+- Generated automatic labels using HuggingFace sentiment pipeline  
+- Created the dataset as a DataFrame  
+
+### Data Splitting
+- Split the data into training and testing sets  
+- Loaded data into DataLoaders for batching  
+
+### Class Balancing
+- Handled class imbalance by assigning higher weight to the minority class  
+
+### Tokenization
+- Tokenized the text using BERT tokenizer  
+
+### Model Building
+- Used a pretrained BERT model for classification  
+- Performed partial fine-tuning of the model  
+
+### Model Evaluation
+- Evaluated using classification report  
+- Analyzed performance with confusion matrix
+  
+# 📊 Visualization
+here is visualization of confusion_matrix
+
